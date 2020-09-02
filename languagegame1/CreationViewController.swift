@@ -9,7 +9,9 @@
 import UIKit
 
 class CreationViewController: UIViewController {
-
+    
+    var SinglePlayerInfoController: ViewController!
+    
     @IBAction func back(_ sender: Any) {
         dismiss(animated:true)
     }
@@ -20,7 +22,11 @@ class CreationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBAction func didTapOnDone(_ sender: Any) {
+        dismiss(animated: true)
+    }
     /*
     // MARK: - Navigation
 
